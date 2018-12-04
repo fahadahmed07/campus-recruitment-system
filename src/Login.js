@@ -3,6 +3,16 @@ import './Bootstrap.min.css';
 import './Login.css';
 
 class Login extends Component {
+
+    constructor (props){
+        super(props)
+        this.gotoSignup = this.gotoSignup.bind(this);
+    }
+
+    gotoSignup(){
+        this.props.history.push('/signup');
+    }
+
     render() {
         return (
             <div id="logInForm">
@@ -19,7 +29,7 @@ class Login extends Component {
                 </div>
                 <button type="button" className="btn btn-primary btn-block text-uppercase mb-3">Log In</button>
                 <p>Don't have an account yet? Click here</p>
-                <button type="button" className="btn btn-outline-primary btn-block text-uppercase mt-0 mb-3">Create new account</button>
+                <button type="button" className="btn btn-outline-primary btn-block text-uppercase mt-0 mb-3" onClick={this.gotoSignup}>Create new account</button>
             </div>
         )
     }
