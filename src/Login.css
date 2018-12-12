@@ -1,8 +1,8 @@
-/* #signInForm{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+*{
+    font-family: 'Titillium Web', sans-serif;
+}
 #userSIEmailError, #userSIPasswordError{
     display: none;
 }

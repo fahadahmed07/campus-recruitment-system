@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+*{
+    font-family: 'Titillium Web', sans-serif;
+}
+.btn{
+    font-size: 14px !important;
+}
+#myNavbar input[type="radio"] {
+    display: none !important;
+    /* visibility: hidden !important; */
+    /* opacity: 0 !important */
+}
+.myNavbarItems{
+    cursor: pointer;
+}
